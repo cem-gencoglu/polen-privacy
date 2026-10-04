@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Polen Privacy</title>
+<meta name="description" content="Privacy policy for the Pollen mobile game, in Turkish and English." />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" />
+<style>
+  :root {
+    --paper: #faf9f4;
+    --ink: #23301f;
+    --ink-soft: #5b6b52;
+    --line: #dfe3d3;
+    --leaf: #2f6b3f;
+    --leaf-soft: #e7f1e3;
+    --gold: #d99a1f;
+    --gold-soft: #fbeecb;
+    --card: #ffffff;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #15190f;
+      --ink: #eef1e8;
+      --ink-soft: #a9b59d;
+      --line: #33402c;
+      --leaf: #7fc98f;
+      --leaf-soft: #1f3324;
+      --gold: #f3c157;
+      --gold-soft: #3a2f13;
+      --card: #1b2015;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #15190f;
+    --ink: #eef1e8;
+    --ink-soft: #a9b59d;
+    --line: #33402c;
+    --leaf: #7fc98f;
+    --leaf-soft: #1f3324;
+    --gold: #f3c157;
+    --gold-soft: #3a2f13;
+    --card: #1b2015;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    padding: 0 16px;
+  }
+  h1, h2 { font-family: 'Fredoka', system-ui, sans-serif; }
+
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  header {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    background: var(--paper);
+    padding: 18px 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid var(--line);
+    z-index: 5;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand svg { width: 30px; height: 30px; flex: none; }
+  .brand span { font-family: 'Fredoka', system-ui, sans-serif; font-weight: 600; font-size: 1.15rem; }
+
+  .langbar {
+    display: flex;
+    gap: 4px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px;
+  }
+  .langbar button {
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.82rem;
+    border: 0;
+    background: transparent;
+    color: var(--ink-soft);
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .langbar button[aria-pressed="true"] { background: var(--leaf); color: #fff; }
+
+  main { padding: 28px 0 64px; }
+
+  .lede {
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin: 0 0 22px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    margin: 0 0 30px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 20px 22px;
+    margin: 0 0 16px;
+  }
+  section.card h2 {
+    margin: 0 0 8px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  section.card h2 .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--gold); flex: none;
+  }
+  section.card p { margin: 0; line-height: 1.6; font-size: 0.97rem; }
+  section.card p + p { margin-top: 10px; }
+  section.card a { color: var(--leaf); font-weight: 600; text-decoration-thickness: 1.5px; }
+
+  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 26px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--leaf-soft); color: var(--leaf);
+    border-radius: 999px; padding: 6px 13px; font-size: 0.82rem; font-weight: 600;
+  }
+  .badge.gold { background: var(--gold-soft); color: var(--gold); }
+
+  .contact-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold-soft); border: 1px solid var(--line);
+    border-radius: 12px; padding: 10px 14px; font-size: 0.9rem; color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
+  footer {
+    color: var(--ink-soft); font-size: 0.8rem; text-align: center;
+    padding: 20px 0 30px; border-top: 1px solid var(--line);
+  }
+
+  [data-en] { display: none; }
+  [data-lang="en"] [data-tr] { display: none; }
+  [data-lang="en"] [data-en] { display: block; }
+  [data-lang="en"] span[data-en] { display: inline; }
+</style>
+</head>
+<body>
+
+<div class="wrap" data-lang="tr" id="page">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="7.6" fill="#e7ac1f"/>
+        <circle cx="9.4" cy="9" r="1.6" fill="#fff2c4"/>
+      </svg>
+      <span>Polen</span>
+    </div>
+    <div class="langbar" role="group" aria-label="Language">
+      <button type="button" data-set-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <div data-tr>
+      <p class="lede">Polen, dönen bir çiçeğe yaprak yerleştirdiğin sakin bir mobil oyun. Bu sayfa, oyunu
+      oynarken ne olduğunu ve ne olmadığını açık şekilde anlatır.</p>
+    </div>
+    <div data-en>
+      <p class="lede">Pollen is a calm mobile game where you place petals onto a turning flower. This page
+      plainly explains what happens — and what doesn't — while you play.</p>
+    </div>
+
+    <div class="badge-row">
+      <span class="badge">🌱 <span data-tr>Hesap gerekmez</span><span data-en>No account needed</span></span>
+      <span class="badge gold">📍 <span data-tr>Veriler cihazında kalır</span><span data-en>Data stays on your device</span></span>
+    </div>
+
+    <div class="meta">
+      <span data-tr><b>Son güncelleme:</b> 4 Ekim 2026</span>
+      <span data-en><b>Last updated:</b> October 4, 2026</span>
+      <span><b><span data-tr>Geliştirici</span><span data-en>Developer</span>:</b> Riskward Games</span>
+    </div>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Kısaca</span><span data-en>In short</span></h2>
+      <p data-tr>Polen bir hesap, üyelik ya da kayıt gerektirmez. Ad, e-posta, telefon gibi kişisel
+      bilgilerini bizden istemeyiz ve toplamayız.</p>
+      <p data-en>Pollen needs no account, membership or sign-up. We do not ask for or collect personal
+      information such as your name, email address or phone number.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Cihazında saklanan veriler</span><span data-en>Data stored on your device</span></h2>
+      <p data-tr>Oyun ilerlemen (seviye, polen, çiçek koleksiyonu, bahçen, satın aldıkların, ayarlar)
+      yalnızca cihazında saklanır ve bize gönderilmez. Uygulamayı silersen bu veriler de silinir; Android’in kendi yedekleme özelliği açıksa senin Google hesabına yedeklenip geri yüklenebilir (bu yedek bize ulaşmaz).</p>
+      <p data-en>Your game progress (levels, pollen, flower collection, garden, purchases, settings) is
+      stored only on your device and is not sent to us. Uninstalling the app deletes it; if Android’s own backup is on, it may be backed up to and restored from your Google account (that backup never reaches us).</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Fotoğraflar</span><span data-en>Photos</span></h2>
+      <p data-tr>Çiçeğin ya da bahçenin fotoğrafını kaydetmeyi yalnızca sen istediğinde uygulama,
+      fotoğrafı cihazının galerisine yazar. Fotoğraf bir sunucuya gönderilmez.</p>
+      <p data-en>Only when you choose to save a photo of your flower or garden does the app write it to
+      your device gallery. The photo is not uploaded to any server.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Reklamlar (Google AdMob)</span><span data-en>Ads (Google AdMob)</span></h2>
+      <p data-tr>Oyun, Google AdMob ile reklam gösterir. AdMob, reklamları göstermek ve ölçmek için
+      reklam kimliğini, yaklaşık konumu (IP adresinden), cihaz bilgilerini ve reklamlarla etkileşimi
+      kullanabilir. Bu veriler Google'ın politikalarına tabidir:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+      <p data-tr>Avrupa Ekonomik Alanı ve Birleşik Krallık'taki kullanıcılara reklam için onay (rıza)
+      penceresi gösterilir; onayı istediğin an cihazın ve uygulamanın gizlilik ayarlarından
+      değiştirebilirsin. "Reklamsız" satın alımı banner ve zorunlu reklamları kalıcı olarak kaldırır; ödül karşılığı izlenen isteğe bağlı reklamlar seçenek olarak kalır.</p>
+      <p data-en>The game shows ads through Google AdMob. AdMob may use the advertising ID, approximate
+      location (from your IP address), device information and ad interactions to serve and measure ads.
+      This data is subject to Google's policies:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+      <p data-en>Users in the European Economic Area and the United Kingdom are shown a consent dialog
+      for ads; you can change your choice at any time in the app or device privacy settings. The
+      "No Ads" purchase permanently removes banner and mandatory ads; optional rewarded ads (watched for a reward) remain available as a choice.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Satın almalar (Google Play Faturalandırma)</span><span data-en>Purchases (Google Play Billing)</span></h2>
+      <p data-tr>Oyun içi satın almalar Google Play üzerinden yapılır. Ödeme bilgilerin bize ulaşmaz;
+      Google tarafından işlenir. Satın alma kaydın (hangi ürünü aldığın), ürünü geri yüklemek için
+      kullanılır.</p>
+      <p data-en>In-app purchases are made through Google Play. Your payment details never reach us;
+      Google processes them. Your purchase record (which product you bought) is used to restore the
+      product.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Çocuklar</span><span data-en>Children</span></h2>
+      <p data-tr>Polen 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek veri toplamayız.</p>
+      <p data-en>Pollen is not directed at children under 13, and we do not knowingly collect data from
+      them.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="dot"></span><span data-tr>Değişiklikler ve iletişim</span><span data-en>Changes and contact</span></h2>
+      <p data-tr>Bu politika güncellenebilir; güncel hali bu sayfada yayınlanır.</p>
+      <p data-en>This policy may be updated; the current version is published on this page.</p>
+      <p class="contact-pill" data-tr>✉️ Sorular için: <a href="mailto:risknrewardgames@gmail.com">risknrewardgames@gmail.com</a></p>
+      <p class="contact-pill" data-en>✉️ Questions: <a href="mailto:risknrewardgames@gmail.com">risknrewardgames@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer data-tr>Polen · Riskward Games · bu sayfa hukuki danışmanlık değildir</footer>
+  <footer data-en>Pollen · Riskward Games · this page is not legal advice</footer>
+</div>
+
+<script>
+  (function () {
+    var page = document.getElementById('page');
+    var saved = null;
+    try { saved = localStorage.getItem('polen_privacy_lang'); } catch (e) {}
+    if (saved === 'tr' || saved === 'en') setLang(saved);
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+    });
+    function setLang(l) {
+      page.setAttribute('data-lang', l);
+      document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === l));
+      });
+      try { localStorage.setItem('polen_privacy_lang', l); } catch (e) {}
+    }
+  })();
+</script>
+
+</body>
+</html>
